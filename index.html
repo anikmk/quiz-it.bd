@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Login Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="label">User Login</h1>
+        <form action="quiz.html" class="login_form" method="post" name="form" onsubmit="return  validation()">
+            <div class="font">Email or Phone</div>
+            <input type="text" placeholder="Enter Email..." name="email">
+            <div id="email_error">Please filup your email or phone</div>
+            <div class="font font2">Password</div>
+            <input type="password" placeholder="Enter Password..." name="password">
+            <div id="password_error">Please filup your password</div>
+            <button type="submit">Login</button>
+        </form>
+
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
